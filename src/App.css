@@ -1,0 +1,43 @@
+
+.colorTest {
+  color: #0a214d;
+  color: #232e44;
+
+}
+
+
+/* === ANIMISTA === */
+
+.color-change-3x {
+	-webkit-animation: color-change-3x 3s linear infinite alternate both;
+	        animation: color-change-3x 3s linear infinite alternate both;
+}
+
+/**
+ * ----------------------------------------
+ * animation color-change-2x
+ * ----------------------------------------
+ */
+ @-webkit-keyframes color-change-3x {
+    0% {
+      background: #000000;
+    }
+    50% {
+        background: #0a1321f2;
+    }
+    100% {
+      background: #0f0a1ff0;
+      }
+  }
+  @keyframes color-change-3x {
+    0% {
+        background: #000000;
+      }
+    50% {
+        background: #0a1321f2;
+    }
+    100% {
+      background: #0f0a1ff0;
+      }
+  }
+  
