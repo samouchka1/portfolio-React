@@ -130,7 +130,7 @@ const NavBar = ({setAboutButton, setAboutContent }) => {
             onClose={handleClose}
             sx={{mt: '9rem'}}
           >
-            <Box sx={{padding: '2rem 3rem', border: 'solid #fff 3px', backgroundColor: '#0a214d'/*primary.main not working */}}>
+            <Box sx={{padding: '2rem 3rem', border: 'solid #fff 3px', backgroundColor: '#232e44'/*primary.main not working */}}>
                 {pages.map((page) => (
                     <ListItem key={page} sx={{padding: '1rem 0'}}>
                       <Fade cascade delay={50} damping={0.15}>
