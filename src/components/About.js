@@ -98,17 +98,28 @@ const skillsGridStyle = {
     margin: '0 auto 1.6rem'
 }
 
-const sectionSkillStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: {
-        md: '2rem',
-        xs: '1rem'
+const skillsGridItem = {
+    width: '100%',
+    maxWidth: '80px'
+}
+
+const emailSkillsGridStyle = {
+    justifyContent: {
+        md: 'center',
+        xs: 'space-around',
     },
-    margin: '2rem 0', 
-    padding: '2rem 0',
+    gap: {
+        md: '1.1rem',
+        xs: '2rem',
+    },
+    margin: '1.6rem auto 0',
+    padding: '1.6rem 0',
     borderTop: 'solid 1px rgb(220, 220, 220)', 
-    // borderBottom: 'solid 1px rgb(220, 220, 220)'
+}
+
+const emailGridItems = {
+    width: '100%',
+    maxWidth: '150px'
 }
 
 //=========================================================
@@ -232,21 +243,21 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                 triggerOnce
                             > */}
                                 <Grid container sx={skillsGridStyle} xs={8} md={12}>
-                                    <Grid item>
+                                    <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/html-5.png'} 
                                             alt="HTML"
                                             sx={aboutContentIconStyle} 
                                         /><br/>HTML
                                     </Grid>
-                                    <Grid item>
+                                    <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/css-3.png'} 
                                             alt="CSS"
                                             sx={aboutContentIconStyle} 
                                         /><br/>CSS
                                     </Grid>
-                                    <Grid item>
+                                    <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/js.png'} 
                                             alt="JavaScript"
@@ -260,20 +271,28 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                             sx={aboutContentIconStyle} 
                                         /><br/>jQuery
                                     </Grid> */}
-                                    <Grid item>
+                                    <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/react.png'} 
                                             alt="React.js"
                                             sx={aboutContentIconStyle} 
                                         /><br/>React
                                     </Grid>
-                                    {/* <Grid item>
+                                    <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/php.png'} 
                                             alt="PHP"
                                             sx={aboutContentIconStyle} 
                                         /><br/>PHP
-                                    </Grid> */}
+                                    </Grid>
+
+                                    <Grid item sx={skillsGridItem}>
+                                        <Box component="img" 
+                                            src={process.env.PUBLIC_URL + '/project-images/skills/mysql.png'} 
+                                            alt="MySQL"
+                                            sx={aboutContentIconStyle} 
+                                        /><br/>MySQL
+                                    </Grid>
                                     
                                     {/* <Grid item>
                                         <Box component="img" 
@@ -293,46 +312,29 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                 </Grid>
                             {/* </Fade> */}
 
-                            <Box sx={sectionSkillStyle}>
-                                <div>
+                            <Grid container xs={8} md={12} sx={emailSkillsGridStyle}>
+                                <Grid item sx={emailGridItems}>
                                     <Box component="img" 
-                                        src={process.env.PUBLIC_URL + '/project-images/skills/email.png'}
+                                        src={process.env.PUBLIC_URL + '/project-images/skills/email.png'} 
                                         alt="HTML Emails"
-                                        sx={emailIconStyle}
-                                    />
-                                    <br/>
-                                    HTML Email Development
-                                </div>
-                                <div>
+                                        sx={emailIconStyle} 
+                                    /><br/>HTML Email Development
+                                </Grid>
+                                <Grid item sx={emailGridItems}>
                                     <Box component="img" 
-                                        src={process.env.PUBLIC_URL + '/project-images/skills/g-analytics.png'}
-                                        alt="Google Analytics"
-                                        sx={emailIconStyle}
-                                    />
-                                    <br/>
-                                    Google Analytics
-                                </div>
-                            </Box>
-                            
-                            {/* <Box>
-                                Familiarity with API's and back-end programming<br />
-                                <Stack direction="row" spacing={2} justifyContent="center" sx={{margin: '.75rem 0 0', fontSize: '.96rem'}}>
-                                    <div>
-                                        <Box component="img"
-                                            alt="MySQL"
-                                            src={process.env.PUBLIC_URL + '/project-images/skills/mysql.png'}
-                                            sx={aboutContentBackendIconStyle}
-                                        /><br />mySQL
-                                    </div>
-                                    <div>
-                                        <Box component="img"
-                                            alt="ExpressJS"
-                                            src={process.env.PUBLIC_URL + '/project-images/skills/express-js.png'}
-                                            sx={aboutContentBackendIconStyle}
-                                        /><br />Express
-                                    </div>
-                                </Stack>
-                            </Box> */}
+                                        src={process.env.PUBLIC_URL + '/project-images/skills/g-analytics.png'} 
+                                        alt="HTML Emails"
+                                        sx={emailIconStyle} 
+                                    /><br/>Google Analytics
+                                </Grid>
+                                <Grid item sx={emailGridItems}>
+                                    <Box component="img" 
+                                        src={process.env.PUBLIC_URL + '/project-images/skills/figma.png'} 
+                                        alt="HTML Emails"
+                                        sx={emailIconStyle} 
+                                    /><br/>Figma
+                                </Grid>
+                            </Grid>
                         </Box>
                     </Box>
                     
