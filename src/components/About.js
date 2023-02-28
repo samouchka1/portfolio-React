@@ -316,23 +316,30 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                 <Grid item sx={emailGridItems}>
                                     <Box component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/skills/email.png'} 
-                                        alt="HTML Emails"
+                                        alt="html emails"
                                         sx={emailIconStyle} 
                                     /><br/>HTML Email Development
                                 </Grid>
                                 <Grid item sx={emailGridItems}>
                                     <Box component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/skills/g-analytics.png'} 
-                                        alt="HTML Emails"
+                                        alt="google analytics"
                                         sx={emailIconStyle} 
                                     /><br/>Google Analytics
                                 </Grid>
                                 <Grid item sx={emailGridItems}>
                                     <Box component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/skills/figma.png'} 
-                                        alt="HTML Emails"
+                                        alt="figma"
                                         sx={emailIconStyle} 
                                     /><br/>Figma
+                                </Grid>
+                                <Grid item sx={emailGridItems}>
+                                    <Box component="img" 
+                                        src={process.env.PUBLIC_URL + '/project-images/skills/mailchimp.png'} 
+                                        alt="mailchimp"
+                                        sx={emailIconStyle} 
+                                    /><br/>Mailchimp
                                 </Grid>
                             </Grid>
                         </Box>
