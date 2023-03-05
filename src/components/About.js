@@ -226,7 +226,7 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                         <Box sx={aboutBioStyle}>
                             <Box 
                                 component="img"
-                                src={process.env.PUBLIC_URL + 'about-image.jpg'}
+                                src={process.env.PUBLIC_URL + 'profile-picture.jpg'}
                                 alt="About Me Image"
                                 sx={aboutImageStyle}    
                             /><br />
