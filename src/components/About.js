@@ -175,7 +175,7 @@ const closeButtonAreaStyle = {
     left: {
         xs: '42%',
         sm: '45%',
-        md: '49%'
+        md: '48%'
     }
 }
 

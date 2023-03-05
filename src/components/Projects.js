@@ -50,25 +50,6 @@ const projects = [
     //     thumbnail: 'chirper.jpg',
     //     source: 'https://github.com/samouchka1/chirper'
     // },
-
-    // {
-    //     name: 'PHP CRUD App',
-    //     path: 'http://crudproject.great-site.net/index.php',
-    //     thumbnail: 'php-crud.jpg',
-    //     source: 'https://github.com/samouchka1/PHP-CRUD-app'
-    // },
-    // {
-    //     name: 'PHP Login System',
-    //     path: 'http://loginsystem.great-site.net/',
-    //     thumbnail: 'php-login.jpg',
-    //     source: 'https://github.com/samouchka1/PHP-login-system'
-    // },
-    {
-        name: 'Github',
-        path: 'https://github.com/samouchka1',
-        thumbnail: 'github.jpg',
-        source: null
-    }
 ]
 
 
@@ -181,9 +162,7 @@ const ProjectsGrid = () => {
                         damping={0}
                         triggerOnce
                     >
-                        <Slide direction="up" 
-                            triggerOnce
-                        >
+                        <Slide direction="up"  triggerOnce>
                             <div>
                                 <Link href={project.path} target='_blank'>
                                     <Box

@@ -60,7 +60,7 @@ const navLinksBorder = {
     },
 }
 
-const NavBar = ({setAboutButton, setAboutContent }) => {
+const NavBar = ({setAboutButton, setAboutContent, setContactButton, setContactContent }) => {
 
   const pages = [
     {
@@ -83,9 +83,11 @@ const NavBar = ({setAboutButton, setAboutContent }) => {
     },
     {
       name: 'Contact',
-      path: 'https://www.linkedin.com/in/mchio-7a68a3236',
-      // path: 'https://www.upwork.com/freelancers/~01c3683d82db31cfe6',
-      method: null
+      path: '#contact',
+      method : () => {
+        setContactButton(false);
+        setContactContent(true);
+      }
     }
   ]
 
