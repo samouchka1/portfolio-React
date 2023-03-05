@@ -10,6 +10,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Signature from './components/Signature';
 import Emails from './components/Emails';
+import Contact from './components/Contact';
 import './App.css';
 
 const theme =  createTheme({
@@ -31,10 +32,14 @@ const App = () => {
   const [showAboutButton, setAboutButton] = useState(true)
   const [showAboutContent, setAboutContent] = useState(false)
 
+  const [showContactButton, setContactButton] = useState(true)
+  const [showContactContent, setContactContent] = useState(false)
+
   return (
     <ThemeProvider theme={theme}>
       <NavBar 
         setAboutButton={setAboutButton} setAboutContent={setAboutContent}
+        setContactButton={setContactButton} setContactContent={setContactContent}
       />
       <Banner />
       <About 
@@ -43,6 +48,10 @@ const App = () => {
       />
       <Projects />
       <Emails />
+      <Contact 
+        showContactButton={showContactButton} setContactButton={setContactButton}
+        showContactContent={showContactContent} setContactContent={setContactContent}
+      />
       <Signature />
     </ThemeProvider>
   );
