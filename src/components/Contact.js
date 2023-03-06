@@ -30,11 +30,6 @@ const closeButtonAreaStyle = {
     top: '5%',
     display: 'block',
     margin: 'auto',
-    // left: {
-    //     xs: '42%',
-    //     sm: '45%',
-    //     md: '48%'
-    // }
 }
 
 const closeButtonStyle ={
