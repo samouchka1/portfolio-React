@@ -29,7 +29,7 @@ const closeButtonAreaStyle = {
     position: 'relative',
     top: '5%',
     left: {
-        xs: '45%',
+        xs: '42%',
         sm: '45%',
         md: '48%'
     }
