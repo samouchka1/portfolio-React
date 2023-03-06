@@ -145,7 +145,7 @@ const Projects = () => {
 const sources = projects.filter(yes => yes.source !== null);
 const noSources = projects.filter(no => no.source === null);
 
-const [projectItems, setProjectItems] = useState(true);
+const [projectItems, setProjectItems] = useState(false);
 const handleToggle = () => {
     setProjectItems(!projectItems)
 }

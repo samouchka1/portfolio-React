@@ -73,11 +73,11 @@ const emailIconStyle = {
     width: '45px',
     '&:hover': {
         animationName: 'zoom',
-        animationDuration: '.5s',
+        animationDuration: '.35s',
         animationFillMode: 'forwards',
         '@keyframes zoom' : {
             '0%': { transform: 'scale(1.0035)'},
-            '100%' : { transform: 'scale(1.08)'}
+            '100%' : { transform: 'scale(1.10)'}
         }
     }
 }

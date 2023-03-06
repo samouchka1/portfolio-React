@@ -12,7 +12,7 @@ const contactContentAreaStyle = {
     height: 'auto',
     fontSize: '1.3rem',
     fontFamily: 'sans-serif',
-    margin: '1.85rem 0 .7rem 0',
+    margin: '1rem 0 .7rem 0',
     padding: '1rem 0 1.3rem',
     backgroundColor: '#232e44', //primary.main not working
     width: '100%',
@@ -31,7 +31,7 @@ const closeButtonAreaStyle = {
     left: {
         xs: '45%',
         sm: '45%',
-        md: '48.5%'
+        md: '48%'
     }
 }
 
@@ -75,13 +75,17 @@ const contactContentIconStyle = {
     width: '50px',
     '&:hover': {
         animationName: 'zoom',
-        animationDuration: '.5s',
+        animationDuration: '.35s',
         animationFillMode: 'forwards',
         '@keyframes zoom' : {
             '0%': { transform: 'scale(1.0035)'},
-            '100%' : { transform: 'scale(1.08)'}
+            '100%' : { transform: 'scale(1.10)'}
         }
     }
+}
+
+const contactLinkAreaStyle = {
+    width: '115px',
 }
 
 const contactLinkStyle = {
@@ -128,33 +132,39 @@ const Contact = ({showContactButton, setContactButton, showContactContent, setCo
                         textAlign: 'center',
                         alignItems: 'center'
                     }}>
-                        <Link href="https://www.linkedin.com/in/mchio-7a68a3236/" rel="noopener" target="_blank"
-                            sx={contactLinkStyle}
-                        >
-                            <Box component="img" 
-                                src={process.env.PUBLIC_URL + '/project-images/contact/linkedin.png'} 
-                                alt="linkedin"
-                                sx={contactContentIconStyle} 
-                            /><br/>LinkedIn
-                        </Link>
-                        <Link href="https://github.com/samouchka1" rel="noopener" target="_blank"
-                            sx={contactLinkStyle}
-                        >
-                            <Box component="img" 
-                                src={process.env.PUBLIC_URL + '/project-images/contact/github.png'} 
-                                alt="github"
-                                sx={contactContentIconStyle} 
-                            /><br/>Github
-                        </Link>
-                        <Link href="mailto:mchio421@gmail.com" rel="noopener" target="_blank"
-                            sx={contactLinkStyle}
-                        >
-                            <Box component="img" 
-                                src={process.env.PUBLIC_URL + '/project-images/contact/email.png'} 
-                                alt="email"
-                                sx={contactContentIconStyle} 
-                            /><br/>Email
-                        </Link>
+                        <Box sx={contactLinkAreaStyle}>
+                            <Link href="https://www.linkedin.com/in/mchio-7a68a3236/" rel="noopener" target="_blank"
+                                sx={contactLinkStyle}
+                            >
+                                <Box component="img" 
+                                    src={process.env.PUBLIC_URL + '/project-images/contact/linkedin.png'} 
+                                    alt="linkedin"
+                                    sx={contactContentIconStyle} 
+                                /><br/>LinkedIn
+                            </Link>
+                        </Box>
+                        <Box sx={contactLinkAreaStyle}>
+                            <Link href="https://github.com/samouchka1" rel="noopener" target="_blank"
+                                sx={contactLinkStyle}
+                            >
+                                <Box component="img" 
+                                    src={process.env.PUBLIC_URL + '/project-images/contact/github.png'} 
+                                    alt="github"
+                                    sx={contactContentIconStyle} 
+                                /><br/>Github
+                            </Link>
+                        </Box>
+                        <Box sx={contactLinkAreaStyle}>
+                            <Link href="mailto:mchio421@gmail.com" rel="noopener" target="_blank"
+                                sx={contactLinkStyle}
+                            >
+                                <Box component="img" 
+                                    src={process.env.PUBLIC_URL + '/project-images/contact/email.png'} 
+                                    alt="email"
+                                    sx={contactContentIconStyle} 
+                                /><br/>Email
+                            </Link>
+                            </Box>
                     </Box>
                 </Box>
             </Fade>
