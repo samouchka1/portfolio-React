@@ -28,11 +28,13 @@ const closeButtonAreaStyle = {
     textAlign: 'center',
     position: 'relative',
     top: '5%',
-    left: {
-        xs: '42%',
-        sm: '45%',
-        md: '48%'
-    }
+    display: 'block',
+    margin: 'auto',
+    // left: {
+    //     xs: '42%',
+    //     sm: '45%',
+    //     md: '48%'
+    // }
 }
 
 const closeButtonStyle ={
