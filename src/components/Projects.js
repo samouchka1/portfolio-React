@@ -79,6 +79,7 @@ const gridItemNoSrcTextStyle = { //Project name text position for no-source list
 
 const gridItemImageStyle = {
     width: '100%',
+    maxWidth: '400px',
     height: {
         md: 270,
         sm: 330,

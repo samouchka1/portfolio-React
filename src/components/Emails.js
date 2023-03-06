@@ -75,6 +75,7 @@ const gridItemTextStyle = {
 
 const gridItemImageStyle = {
     width: '100%',
+    maxWidth: '400px',
     height: {
         md: 270,
         sm: 330,
