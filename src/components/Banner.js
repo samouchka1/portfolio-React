@@ -7,12 +7,6 @@ import {
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import { Slide } from "react-awesome-reveal";
 
-
-const bannerImageStyle = {
-    width: '100%',
-    height: '100%'
-}
-
 const welcomeTextAreaStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -52,19 +46,9 @@ const Banner = () => {
 
   return (
     <Container maxWidth={false}
-        
          sx={{height: '85vh', width: '100%', mb: '1rem'}}>
         <ParallaxBanner style={{ aspectRatio: '2 / 1', height: '87vh'}}>
-            {/* <ParallaxBannerLayer image={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'} speed={-40} /> */}
-            <ParallaxBannerLayer speed={-40}>
-                {/* eslint-disable-next-line */}
-                <img
-                    src={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'}
-                    alt="image of a beach with lightning on horizon"
-                    loading="lazy"
-                    style={bannerImageStyle}
-                />
-            </ParallaxBannerLayer>
+            <ParallaxBannerLayer image={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'} speed={-40} />
             <Box sx={{position: 'relative', top: '40%'}}>
                 <Box sx={welcomeTextAreaStyle}>
                     <Slide direction="left" duration="600">
