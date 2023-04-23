@@ -8,9 +8,12 @@ import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import { Slide } from "react-awesome-reveal";
 
 
+const bannerImageStyle = {
+    width: '100%',
+    height: '100%'
+}
+
 const welcomeTextAreaStyle = {
-    // position: 'relative',
-    // top: '33%',
     display: 'flex',
     flexDirection: 'column',
     width: {
@@ -21,18 +24,6 @@ const welcomeTextAreaStyle = {
     margin: '0 auto',
     textAlign: 'center',
     color: '#fff',
-    // padding: '.5rem',
-    // borderRadius: '10px',
-    // backgroundColor: 'rgba(30, 30, 30, 0.85)',
-    // '&:hover': {
-    //     animationName: 'zoom',
-    //     animationDuration: '1s',
-    //     animationFillMode: 'forwards',
-    //     '@keyframes zoom' : {
-    //         '0%': { transform: 'scale(1.0035)'},
-    //         '100%' : { transform: 'scale(1.04)'}
-    //     }
-    // }
 }
 
 const welcomeTextStyle = {
@@ -64,7 +55,15 @@ const Banner = () => {
         
          sx={{height: '85vh', width: '100%', mb: '1rem'}}>
         <ParallaxBanner style={{ aspectRatio: '2 / 1', height: '87vh'}}>
-            <ParallaxBannerLayer image={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'} speed={-40} />
+            {/* <ParallaxBannerLayer image={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'} speed={-40} /> */}
+            <ParallaxBannerLayer speed={-40}>
+                <img
+                    src={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'}
+                    alt="portfolio-banner-image"
+                    loading="lazy"
+                    style={bannerImageStyle}
+                />
+            </ParallaxBannerLayer>
             <Box sx={{position: 'relative', top: '40%'}}>
                 <Box sx={welcomeTextAreaStyle}>
                     <Slide direction="left" duration="600">
