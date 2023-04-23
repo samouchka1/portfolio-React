@@ -57,9 +57,10 @@ const Banner = () => {
         <ParallaxBanner style={{ aspectRatio: '2 / 1', height: '87vh'}}>
             {/* <ParallaxBannerLayer image={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'} speed={-40} /> */}
             <ParallaxBannerLayer speed={-40}>
+                {/* eslint-disable-next-line */}
                 <img
                     src={process.env.PUBLIC_URL + 'annie-nyle-unsplash.jpg'}
-                    alt="portfolio-banner-image"
+                    alt="image of a beach with lightning on horizon"
                     loading="lazy"
                     style={bannerImageStyle}
                 />
