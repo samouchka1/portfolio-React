@@ -299,13 +299,13 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                         /><br/>Laravel
                                     </Grid> */}
 
-                                    {/* <Grid item>
+                                    <Grid item>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/wordpress.png'} 
                                             alt="WordPress"
                                             sx={aboutContentIconStyle} 
                                         /><br/>WordPress
-                                    </Grid> */}
+                                    </Grid>
                                 </Grid>
                             {/* </Fade> */}
 
