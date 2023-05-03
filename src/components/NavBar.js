@@ -91,15 +91,6 @@ const NavBar = ({setAboutButton, setAboutContent, setContactButton, setContactCo
     }
   ]
 
-  // const [anchorEl2, setAnchorEl2] = useState(null);
-  // const openNav = Boolean(anchorEl2);
-  // const handleClickNav = (event) => {
-  //   setAnchorEl2(event.currentTarget);
-  // };
-  // const handleCloseNav = () => {
-  //   setAnchorEl2(null);
-  // };
-
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -116,17 +107,10 @@ const NavBar = ({setAboutButton, setAboutContent, setContactButton, setContactCo
           {/* MOBILE NAV */}
           <Button 
             sx={{pl:'1rem', display:{md: 'none', xs: 'block'}}}
-            // onClick={handleClickNav}
             onClick={handleOpen}
           >
             {open ? <ClearIcon sx={{color: '#fff'}} /> : <MenuIcon sx={{color: '#fff'}} />}
           </Button>
-          {/* <Popover
-            anchorEl={anchorEl2}
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'left'}}
-            open={openNav}
-            onClose={handleCloseNav}
-          > */}
           <Modal
             open={open}
             onClose={handleClose}
@@ -162,7 +146,6 @@ const NavBar = ({setAboutButton, setAboutContent, setContactButton, setContactCo
                 ))}
             </Box>
           </Modal>
-          {/* </Popover> */}
           {/* END MOBILE NAV */}
 
             <List sx={{ display: {md: 'flex', xs: 'none'}}}>
