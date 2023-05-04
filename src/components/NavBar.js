@@ -19,6 +19,7 @@ import {
 import { Slide, Fade } from "react-awesome-reveal";
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
+// import { theme } from '../App.js';
 
 //===STYLES===
 
@@ -33,9 +34,11 @@ const navBar = {
     xs: 'left'
   },
   height: 108,
-  backgroundColor : 'primary.main',
   width: '100%',
-  margin: '1rem auto'
+  margin: '1rem auto',
+  backgroundColor : 'primary.main',
+  // background: 'background.default'
+  // background: theme.background.default
 }
 
 const navLinks = {

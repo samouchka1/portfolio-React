@@ -13,13 +13,16 @@ import Emails from './components/Emails';
 import Contact from './components/Contact';
 import './App.css';
 
-const theme =  createTheme({
+export const theme =  createTheme({
   palette: {
     primary: {
-      main: '#232e44' //test
+      main: '#232e44' //primary color
     },
     secondary: {
-      main: green[200] //test
+      main: green[200] //secondary color
+    },
+    background: {
+      default: 'linear-gradient(0deg, #b8b7b7 0%, #8b8dc4 100%)'
     }
   },
   typography: {
