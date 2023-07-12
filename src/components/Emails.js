@@ -14,46 +14,28 @@ import { Slide, Fade } from "react-awesome-reveal";
 
 const emails = [
     {
-        name: 'Responsive Email',
-        path: 'https://samouchka1.github.io/HTML-email-responsive/',
-        thumbnail: 'responsive-thumbnail.JPG',
-        source: 'https://github.com/samouchka1/HTML-email-responsive'
+        name: 'CareCredit',
+        path: 'https://samouchka1.github.io/EM-CareCredit/',
+        thumbnail: 'thumbnail-carecredit.PNG',
+        source: 'https://github.com/samouchka1/EM-CareCredit/blob/main/index.html'
     },
     {
-        name: 'Elite Charters',
-        path: 'https://samouchka1.github.io/HTML-email-elite-charters/',
-        thumbnail: 'charters-thumbnail.JPG',
-        source: 'https://github.com/samouchka1/HTML-email-elite-charters'
+        name: 'Walgreens',
+        path: 'https://samouchka1.github.io/EM-Walgreens/',
+        thumbnail: 'thumbnail-walgreens.PNG',
+        source: 'https://github.com/samouchka1/EM-Walgreens/blob/main/index.html'
     },
     {
-        name: 'Paypal Clone',
-        path: 'https://samouchka1.github.io/HTML-email-paypal-clone/',
-        thumbnail: 'paypal-thumbnail.JPG',
-        source: 'https://github.com/samouchka1/HTML-email-paypal-clone'
+        name: 'K12',
+        path: 'https://samouchka1.github.io/EM-K12/',
+        thumbnail: 'thumbnail-k12.PNG',
+        source: 'https://github.com/samouchka1/EM-K12/blob/main/index.html'
     },
     {
-        name: 'GNC Clone',
-        path: 'https://samouchka1.github.io/HTML-email-gnc-clone/',
-        thumbnail: 'gnc-thumbnail.JPG',
-        source: 'https://github.com/samouchka1/HTML-email-gnc-clone'
-    },
-    {
-        name: 'Columbia Clone',
-        path: 'https://samouchka1.github.io/HTML-email-columbia-clone/',
-        thumbnail: 'columbia-thumbnail.JPG',
-        source: 'https://github.com/samouchka1/HTML-email-columbia-clone'
-    },
-    {
-        name: 'Zoom Clone',
-        path: 'https://samouchka1.github.io/HTML-email-zoom-clone/',
-        thumbnail: 'zoom-thumbnail.JPG',
-        source: 'https://github.com/samouchka1/HTML-email-zoom-clone'
-    },
-    {
-        name: 'DSG Clone',
-        path: 'https://samouchka1.github.io/HTML-email-dsg-clone/',
-        thumbnail: 'dsg-thumbnail.JPG',
-        source: 'https://github.com/samouchka1/HTML-email-dsg-clone'
+        name: 'Amazon',
+        path: 'https://samouchka1.github.io/EM-Amazon/',
+        thumbnail: 'thumbnail-amazon.PNG',
+        source: 'https://github.com/samouchka1/EM-Amazon/blob/main/index.html'
     }
 ]
 
