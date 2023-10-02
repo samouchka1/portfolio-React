@@ -6,38 +6,41 @@ import {
     Link,
     Box,
     Typography,
-    Tooltip ,
+    // Tooltip ,
     Container,
     Button
 } from '@mui/material';
-import { Slide, Fade } from "react-awesome-reveal";
+import { 
+    Slide, 
+    // Fade 
+} from "react-awesome-reveal";
 
-const emails = [
-    {
-        name: 'CareCredit',
-        path: 'https://samouchka1.github.io/EM-CareCredit/',
-        thumbnail: 'thumbnail-carecredit.PNG',
-        source: 'https://github.com/samouchka1/EM-CareCredit/blob/main/index.html'
-    },
-    {
-        name: 'Walgreens',
-        path: 'https://samouchka1.github.io/EM-Walgreens/',
-        thumbnail: 'thumbnail-walgreens.PNG',
-        source: 'https://github.com/samouchka1/EM-Walgreens/blob/main/index.html'
-    },
-    {
-        name: 'K12',
-        path: 'https://samouchka1.github.io/EM-K12/',
-        thumbnail: 'thumbnail-k12.PNG',
-        source: 'https://github.com/samouchka1/EM-K12/blob/main/index.html'
-    },
-    {
-        name: 'Amazon',
-        path: 'https://samouchka1.github.io/EM-Amazon/',
-        thumbnail: 'thumbnail-amazon.PNG',
-        source: 'https://github.com/samouchka1/EM-Amazon/blob/main/index.html'
-    }
-]
+// const emails = [
+//     {
+//         name: 'CareCredit',
+//         path: 'https://samouchka1.github.io/EM-CareCredit/',
+//         thumbnail: 'thumbnail-carecredit.PNG',
+//         source: 'https://github.com/samouchka1/EM-CareCredit/blob/main/index.html'
+//     },
+//     {
+//         name: 'Walgreens',
+//         path: 'https://samouchka1.github.io/EM-Walgreens/',
+//         thumbnail: 'thumbnail-walgreens.PNG',
+//         source: 'https://github.com/samouchka1/EM-Walgreens/blob/main/index.html'
+//     },
+//     {
+//         name: 'K12',
+//         path: 'https://samouchka1.github.io/EM-K12/',
+//         thumbnail: 'thumbnail-k12.PNG',
+//         source: 'https://github.com/samouchka1/EM-K12/blob/main/index.html'
+//     },
+//     {
+//         name: 'Amazon',
+//         path: 'https://samouchka1.github.io/EM-Amazon/',
+//         thumbnail: 'thumbnail-amazon.PNG',
+//         source: 'https://github.com/samouchka1/EM-Amazon/blob/main/index.html'
+//     }
+// ]
 
 
 const gridStyle = {
@@ -83,40 +86,40 @@ const rpeoBgStyle = {
 }
 // end RPEO
 
-const gridItemImageStyle = {
-    width: '100%',
-    maxWidth: '400px',
-    height: {
-        md: 270,
-        sm: 330,
-        xs: 225
-    },
-    opacity: '.8',
-    '&:hover': {
-        opacity: '1',
-        animationName: 'zoom',
-        animationDuration: '1s',
-        animationFillMode: 'forwards',
-        '@keyframes zoom' : {
-            '0%': { transform: 'scale(1.0035)'},
-            '100%' : { transform: 'scale(1.04)'}
-        }
-    }
-}
+// const gridItemImageStyle = {
+//     width: '100%',
+//     maxWidth: '400px',
+//     height: {
+//         md: 270,
+//         sm: 330,
+//         xs: 225
+//     },
+//     opacity: '.8',
+//     '&:hover': {
+//         opacity: '1',
+//         animationName: 'zoom',
+//         animationDuration: '1s',
+//         animationFillMode: 'forwards',
+//         '@keyframes zoom' : {
+//             '0%': { transform: 'scale(1.0035)'},
+//             '100%' : { transform: 'scale(1.04)'}
+//         }
+//     }
+// }
 
-const sourceButtonAreaStyle = {
-    position: 'relative',
-    textAlign: 'center',
-    margin: '1rem auto'
-}
+// const sourceButtonAreaStyle = {
+//     position: 'relative',
+//     textAlign: 'center',
+//     margin: '1rem auto'
+// }
 
-const sourceButtonStyle = {
-    backgroundColor: 'rgba(0, 0, 0, 0)',
-    opacity: '.9',
-    '&:hover': {
-        opacity: '1'
-    }
-}
+// const sourceButtonStyle = {
+//     backgroundColor: 'rgba(0, 0, 0, 0)',
+//     opacity: '.9',
+//     '&:hover': {
+//         opacity: '1'
+//     }
+// }
 
 const emailButtonStyle = {
     position: 'relative',
