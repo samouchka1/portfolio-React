@@ -58,7 +58,7 @@ const Banner = () => {
                     </Slide>
                     <Slide direction="left" duration="850">
                         <Typography sx={welcomeSubTextStyle}>
-                            Web and Email Developer for Hire
+                            Web and Email Developer
                         </Typography>
                     </Slide>
                 </Box>

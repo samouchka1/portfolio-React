@@ -43,7 +43,7 @@ const emails = [
 const gridStyle = {
     justifyContent: 'center',
     gap: '1.1rem',
-    marginTop: '1.5rem'
+    margin: '2rem auto'
 }
 
 const gridItemTextStyle = {
@@ -54,6 +54,34 @@ const gridItemTextStyle = {
     fontWeight: '500',
     zIndex: '1'
 }
+
+// RPEO Styles
+const rpeoImgStyle = {
+    width: '100%',
+    maxWidth: '400px',
+    height: 'auto',
+    opacity: '.8',
+    '&:hover': {
+        opacity: '1',
+        animationName: 'zoom',
+        animationDuration: '1s',
+        animationFillMode: 'forwards',
+        '@keyframes zoom' : {
+            '0%': { transform: 'scale(1.0035)'},
+            '100%' : { transform: 'scale(1.04)'}
+        }
+    }
+}
+const rpeoBgStyle = {
+    backgroundColor: 'transparent',
+    '&:hover': {
+        backgroundColor: '#a6a6a654',
+        transition: '1.5s'
+    },
+    borderRadius: '20px',
+    padding: '.75rem 0'
+}
+// end RPEO
 
 const gridItemImageStyle = {
     width: '100%',
@@ -129,7 +157,25 @@ const EmailsGrid = () => {
     return (
         <Grid container sx={gridStyle}>
 
-            {emails.map((email) => (
+            <Grid item xs={6} md={4} sx={rpeoBgStyle}>
+                <Slide direction="up" triggerOnce>
+                    <div style={{textAlign: 'center'}}>
+                        <Link href='https://www.rpeorigin.com/' target='_blank'>
+                            <Box 
+                                component="img"
+                                src={process.env.PUBLIC_URL + '/project-images/emails/rpeo.png'}
+                                alt="RPE Origin logo"
+                                sx={rpeoImgStyle}
+                            />
+                        </Link>
+                        <Typography sx={gridItemTextStyle}>
+                            Happily employed with RPE Origin.
+                        </Typography>
+                    </div>
+                </Slide>
+            </Grid>
+
+            {/* {emails.map((email) => (
 
                 <Grid item xs={8} md={3} key={email} sx={{maxWidth: '80%', flexGrow: 1}}>
                     <Fade cascade 
@@ -152,7 +198,6 @@ const EmailsGrid = () => {
                                     {email.name}
                                 </Typography>
 
-                                {/* <br/> */}
                                 <Box sx={sourceButtonAreaStyle}>
                                     <Tooltip title={'Source code for ' + email.name} placement="bottom">
                                         <Link href={email.source} target='_blank' sx={sourceButtonStyle}>
@@ -168,7 +213,7 @@ const EmailsGrid = () => {
                         </Slide>
                     </Fade>
                 </Grid>
-            ))}
+            ))} */}
         </Grid>
     )
 }
