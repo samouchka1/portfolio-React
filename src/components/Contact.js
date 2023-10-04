@@ -4,7 +4,8 @@ Box,
 Container,
 Button,
 Fade,
-Link
+Link,
+Typography
 } from '@mui/material';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
@@ -66,6 +67,13 @@ const contactButtonStyle = {
             border: 'solid white 3px',
             transition: '.3s'   
         }
+}
+
+const contactTextStyle = {
+    fontSize: {
+        md: '1.3rem',
+        xs: '1.05rem'
+    }
 }
 
 const contactContentIconStyle = {
@@ -137,7 +145,7 @@ const Contact = ({showContactButton, setContactButton, showContactContent, setCo
                                     src={process.env.PUBLIC_URL + '/project-images/contact/linkedin.png'} 
                                     alt="linkedin"
                                     sx={contactContentIconStyle} 
-                                /><br/>LinkedIn
+                                /><br/><Typography sx={contactTextStyle}>LinkedIn</Typography>
                             </Link>
                         </Box>
                         <Box sx={contactLinkAreaStyle}>
@@ -148,7 +156,7 @@ const Contact = ({showContactButton, setContactButton, showContactContent, setCo
                                     src={process.env.PUBLIC_URL + '/project-images/contact/github.png'} 
                                     alt="github"
                                     sx={contactContentIconStyle} 
-                                /><br/>Github
+                                /><br/><Typography sx={contactTextStyle}>Github</Typography>
                             </Link>
                         </Box>
                         <Box sx={contactLinkAreaStyle}>
@@ -159,7 +167,7 @@ const Contact = ({showContactButton, setContactButton, showContactContent, setCo
                                     src={process.env.PUBLIC_URL + '/project-images/contact/email.png'} 
                                     alt="email"
                                     sx={contactContentIconStyle} 
-                                /><br/>Email
+                                /><br/><Typography sx={contactTextStyle}>Email</Typography>
                             </Link>
                             </Box>
                     </Box>

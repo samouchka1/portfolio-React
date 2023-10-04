@@ -63,7 +63,11 @@ const gridItemTextStyle = {
     position: 'relative',
     color: 'white',
     textAlign: 'center',
-    fontSize: '1.3rem',
+    fontSize: {
+        md: '1.3rem',
+        xs: '1.05rem'
+    },
+    marginTop: '1rem',
     fontWeight: '500',
     zIndex: '1'
 }
@@ -80,11 +84,13 @@ const gridItemNoSrcTextStyle = { //Project name text position for no-source list
 const gridItemImageStyle = {
     width: '100%',
     maxWidth: '400px',
-    height: {
-        md: 270,
-        sm: 330,
-        xs: 225
-    },
+    height: 'auto'
+    //      {
+    //     md: 270,
+    //     sm: 330,
+    //     xs: 225
+    // }
+    ,
     opacity: '.8',
     '&:hover': {
         opacity: '1',
@@ -158,7 +164,7 @@ const ProjectsGrid = () => {
 
             {sources.map((project) => (
 
-                <Grid item xs={8} md={3} key={project} sx={{maxWidth: '80%', flexGrow: 1}}>
+                <Grid item xs={8} md={3} key={project} sx={{textAlign: 'center', maxWidth: '80%', flexGrow: 1}}>
                     <Fade cascade 
                         damping={0}
                         triggerOnce

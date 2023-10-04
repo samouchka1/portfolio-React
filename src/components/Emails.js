@@ -53,7 +53,11 @@ const gridItemTextStyle = {
     position: 'relative',
     color: 'white',
     textAlign: 'center',
-    fontSize: '1.3rem',
+    fontSize: {
+        md: '1.3rem',
+        xs: '1.05rem'
+    },
+    marginTop: '1rem',
     fontWeight: '500',
     zIndex: '1'
 }
@@ -74,15 +78,6 @@ const rpeoImgStyle = {
             '100%' : { transform: 'scale(1.04)'}
         }
     }
-}
-const rpeoBgStyle = {
-    backgroundColor: 'transparent',
-    '&:hover': {
-        backgroundColor: '#a6a6a654',
-        transition: '1.5s'
-    },
-    borderRadius: '20px',
-    padding: '.75rem 0'
 }
 // end RPEO
 
@@ -160,7 +155,7 @@ const EmailsGrid = () => {
     return (
         <Grid container sx={gridStyle}>
 
-            <Grid item xs={6} md={4} sx={rpeoBgStyle}>
+            <Grid item xs={6} md={4}>
                 <Slide direction="up" triggerOnce>
                     <div style={{textAlign: 'center'}}>
                         <Link href='https://www.rpeorigin.com/' target='_blank'>

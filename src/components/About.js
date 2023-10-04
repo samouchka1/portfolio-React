@@ -15,7 +15,10 @@ const aboutContentAreaStyle = {
     height: 'auto',
     fontSize: '1.3rem',
     fontFamily: 'sans-serif',
-    margin: '1.85rem 0 .7rem 0',
+    margin: {
+        md: '1.85rem 0 .7rem 0',
+        xs: '2.1rem 0 .7rem 0'
+    },
     padding: '1rem 0 1.3rem',
     backgroundColor: '#232e44', //primary.main not working
     width: '100%',
@@ -139,9 +142,9 @@ const aboutButtonStyle = {
     textTransform: 'none',
     borderRadius: 0,
     padding: '1.6rem',
-    margin: {
-        md: '1rem 0 0 0',
-        xs: '1rem 0 0 0'
+    marginTop: {
+        md: '1rem',
+        xs: '1.5rem'
     },
     border: 'solid rgb(0, 0, 0) 3px',
         '&:hover': {
@@ -153,12 +156,11 @@ const aboutButtonStyle = {
 
 const aboutImageStyle = {
     position: 'relative',
-    height: {
-        md: '40vh',
-        sm: '30vh',
-        xs: '30vh'
+    height: 'auto',
+    width: {
+        md: '300px',
+        xs: '200px'
     },
-    width: 'auto',
     borderRadius: '50%',
     margin: {
         md: '2rem 0',
@@ -166,6 +168,13 @@ const aboutImageStyle = {
     },    
     caretColor: 'transparent',
     boxShadow: 'rgb(173, 173, 173) 1px 1px 7px',
+}
+
+const aboutTextStyle = {
+    fontSize: {
+        md: '1.3rem',
+        xs: '1.05rem'
+    }
 }
 
 const closeButtonAreaStyle = {
@@ -245,21 +254,21 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                             src={process.env.PUBLIC_URL + '/project-images/skills/html-5.png'} 
                                             alt="HTML"
                                             sx={aboutContentIconStyle} 
-                                        /><br/>HTML
+                                        /><br/><Typography sx={aboutTextStyle}>HTML</Typography>
                                     </Grid>
                                     <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/css-3.png'} 
                                             alt="CSS"
                                             sx={aboutContentIconStyle} 
-                                        /><br/>CSS
+                                        /><br/><Typography sx={aboutTextStyle}>CSS</Typography>
                                     </Grid>
                                     <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/js.png'} 
                                             alt="JavaScript"
                                             sx={aboutContentIconStyle} 
-                                        /><br/>JavaScript
+                                        /><br/><Typography sx={aboutTextStyle}>JavaScript</Typography>
                                     </Grid>
                                     {/* <Grid item>
                                         <Box component="img" 
@@ -273,14 +282,14 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                             src={process.env.PUBLIC_URL + '/project-images/skills/react.png'} 
                                             alt="React.js"
                                             sx={aboutContentIconStyle} 
-                                        /><br/>React
+                                        /><br/><Typography sx={aboutTextStyle}>React</Typography>
                                     </Grid>
                                     <Grid item sx={skillsGridItem}>
                                         <Box component="img" 
                                             src={process.env.PUBLIC_URL + '/project-images/skills/php.png'} 
                                             alt="PHP"
                                             sx={aboutContentIconStyle} 
-                                        /><br/>PHP
+                                        /><br/><Typography sx={aboutTextStyle}>PHP</Typography>
                                     </Grid>
 
                                     <Grid item sx={skillsGridItem}>
@@ -288,7 +297,7 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                             src={process.env.PUBLIC_URL + '/project-images/skills/mysql.png'} 
                                             alt="MySQL"
                                             sx={aboutContentIconStyle} 
-                                        /><br/>MySQL
+                                        /><br/><Typography sx={aboutTextStyle}>MySQL</Typography>
                                     </Grid>
                                     
                                     {/* <Grid item>
@@ -304,7 +313,7 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                             src={process.env.PUBLIC_URL + '/project-images/skills/wordpress.png'} 
                                             alt="WordPress"
                                             sx={aboutContentIconStyle} 
-                                        /><br/>WordPress
+                                        /><br/><Typography sx={aboutTextStyle}>WordPress</Typography>
                                     </Grid>
                                 </Grid>
                             {/* </Fade> */}
@@ -315,28 +324,28 @@ const About = ({showAboutButton, setAboutButton, showAboutContent, setAboutConte
                                         src={process.env.PUBLIC_URL + '/project-images/skills/email.png'} 
                                         alt="html emails"
                                         sx={emailIconStyle} 
-                                    /><br/>HTML Email Development
+                                    /><br/><Typography sx={aboutTextStyle}>HTML Email Development</Typography>
                                 </Grid>
                                 <Grid item sx={emailGridItems}>
                                     <Box component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/skills/g-analytics.png'} 
                                         alt="google analytics"
                                         sx={emailIconStyle} 
-                                    /><br/>Google Analytics
+                                    /><br/><Typography sx={aboutTextStyle}>Google Analytics</Typography>
                                 </Grid>
                                 <Grid item sx={emailGridItems}>
                                     <Box component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/skills/figma.png'} 
                                         alt="figma"
                                         sx={emailIconStyle} 
-                                    /><br/>Figma
+                                    /><br/><Typography sx={aboutTextStyle}>Figma</Typography>
                                 </Grid>
                                 <Grid item sx={emailGridItems}>
                                     <Box component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/skills/mailchimp.png'} 
                                         alt="mailchimp"
                                         sx={emailIconStyle} 
-                                    /><br/>Mailchimp
+                                    /><br/><Typography sx={aboutTextStyle}>Mailchimp</Typography>
                                 </Grid>
                             </Grid>
                         </Box>
