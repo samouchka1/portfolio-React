@@ -171,7 +171,7 @@ const ProjectsGrid = () => {
                     >
                         <Slide direction="up"  triggerOnce>
                             <div>
-                                <Link href={project.path} target='_blank'>
+                                <Link href={project.path} target='_blank' rel="noopener">
                                     <Box
                                         component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/' + project.thumbnail} 
@@ -211,7 +211,7 @@ const ProjectsGrid = () => {
                             triggerOnce
                         >
                             <div>
-                                <Link href={project.path} target='_blank'>
+                                <Link href={project.path} target='_blank' rel="noopener">
                                     <Box
                                         component="img" 
                                         src={process.env.PUBLIC_URL + '/project-images/' + project.thumbnail} 

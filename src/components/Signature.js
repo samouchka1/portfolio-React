@@ -44,7 +44,7 @@ const Signature = () => {
     return (
         <Container maxWidth={false}>
             <Box sx={sourceButtonAreaStyle}>
-                <Link href="https://github.com/samouchka1/portfolio-react" target='_blank' sx={sourceButtonStyle}>
+                <Link href="https://github.com/samouchka1/portfolio-react" target='_blank' rel="noopener" sx={sourceButtonStyle}>
                     <Box component="img" 
                         src={process.env.PUBLIC_URL + '/project-images/source-icon.png'}
                         title="Source code for this portfolio"

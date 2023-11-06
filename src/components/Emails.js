@@ -158,7 +158,7 @@ const EmailsGrid = () => {
             <Grid item xs={6} md={4}>
                 <Slide direction="up" triggerOnce>
                     <div style={{textAlign: 'center'}}>
-                        <Link href='https://www.rpeorigin.com/' target='_blank'>
+                        <Link href='https://www.rpeorigin.com/' target='_blank' rel="noopener">
                             <Box 
                                 component="img"
                                 src={process.env.PUBLIC_URL + '/project-images/emails/rpeo.png'}
