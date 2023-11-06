@@ -103,7 +103,7 @@ const skillsGridStyle = {
 
 const skillsGridItem = {
     width: '100%',
-    maxWidth: '80px'
+    maxWidth: '100px'
 }
 
 const emailSkillsGridStyle = {
