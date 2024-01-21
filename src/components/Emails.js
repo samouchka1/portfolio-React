@@ -167,7 +167,7 @@ const EmailsGrid = () => {
                             />
                         </Link>
                         <Typography sx={gridItemTextStyle}>
-                            Happily employed with RPE Origin.
+                            RPE Origin.
                         </Typography>
                     </div>
                 </Slide>
